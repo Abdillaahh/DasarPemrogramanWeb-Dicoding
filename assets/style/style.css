@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 100;
+    background-color: #FFFDEF;
+  }
+
+  footer {
+    padding: 20px;
+    background-color: #C50000;
+    color: wheat;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  nav a {
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #FFFDEF;
+    transition: all 0.2s ease-in-out;
+    border-radius: 999px;
+    padding: 0.5rem 1.5rem;
+  }
+
+  nav a:hover {
+    background-color: white;
+    color: #C50000;
+    font-weight: bold;
+  }
+  
+  .foto {
+    width: 50%;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .fotokarier {
+    width: 50%;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .quotse img {
+    max-width: 200px;
+  }
+
+  .card {
+    box-shadow: 6px 6px 7px 0px rgba(0,0,0,0.59);
+    border-radius: 5px;
+  
+    padding: 20px;
+    
+  }
+
+  .header {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #E70000;
+    color: #FFFDEF;
+    text-align: center;
+  }
+
+  nav li {
+    list-style-type: none;
+    
+  }
+
+  nav {
+    background-color: #C50000;
+    padding: 2px;
+    position: sticky;
+    top: 0;
+    
+  }
+
+  nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: right;
+  }
+
+  main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .content {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+  }
+
+  aside {
+    flex: 1;
+  }
+
+  aside figure img {
+    width: 300px;
+  }
+
+  header{
+    display: inline;
+  }
+
+  .apa {
+    text-align: center;
+    line-height: 1rem;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    #content,
+    aside {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    main {
+      flex-flow: column nowrap;
+    }
+    main aside {
+      align-self: center;
+    }
+  }
+
+  @media screen and (max-width: 720px) {
+    nav ul {
+      justify-content: center;
+    }
+    main aside {
+      align-self: stretch;
+    }
+  }
+
+  aside p {
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .subjudul {
+    font-weight: 300;
+  }
